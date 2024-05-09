@@ -1,6 +1,5 @@
 package com.santander.streamAPI.Consumer;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -14,7 +13,11 @@ public class ConsumerEx {
           if (n % 2 == 0) System.out.println(n);
         };
 
-        integerList.forEach(impressEven);
+        //integerList.forEach(impressEven);
+
+        integerList.forEach(n -> {
+            if (n%2==0) System.out.println(n);
+        });
     }
 }
 
