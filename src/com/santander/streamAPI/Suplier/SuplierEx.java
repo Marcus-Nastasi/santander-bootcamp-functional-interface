@@ -10,7 +10,7 @@ public class SuplierEx {
     public static void main(String[] args) {
         Supplier<String> wellcome = () -> "Hello, wellcome to the Suplier test!";
 
-        List<String> wellcomeList = Stream.generate(wellcome).limit(5).collect(Collectors.toList());
+        List<String> wellcomeList = Stream.generate(wellcome).limit(5).toList();
 
         wellcomeList.forEach(w -> System.out.println(w));
     }
