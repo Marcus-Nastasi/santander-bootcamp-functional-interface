@@ -11,7 +11,9 @@ public class BinaryOpEx {
 
         //BinaryOperator<Double> sumList = (n1, n2) -> n1 + n2;
 
-        doubleList.stream().reduce((n1, n2) -> n1 + n2).stream().forEach(System.out::println);
+        double res = doubleList.stream().reduce(0.0, (n1, n2) -> n1 + n2);
+
+        System.out.printf("%.2f", res);
     }
 }
 
