@@ -12,7 +12,7 @@ public class SuplierEx {
 
         List<String> wellcomeList = Stream.generate(wellcome).limit(5).toList();
 
-        wellcomeList.forEach(w -> System.out.println(w));
+        wellcomeList.forEach(System.out::println);
     }
 }
 
