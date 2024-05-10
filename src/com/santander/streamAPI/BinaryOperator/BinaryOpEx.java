@@ -11,7 +11,7 @@ public class BinaryOpEx {
 
         //BinaryOperator<Double> sumList = (n1, n2) -> n1 + n2;
 
-        double res = doubleList.stream().reduce(0.0, Double::sum);
+        double res = doubleList.stream().reduce(0.0, Double::sum); // identity equals accumulator.
 
         System.out.printf("%.2f", res);
     }

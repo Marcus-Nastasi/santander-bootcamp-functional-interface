@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class SuplierEx {
 
     public static void main(String[] args) {
-        Supplier<String> wellcome = () -> "Hello, wellcome to the Suplier test!";
+        Supplier<String> wellcome = () -> "Hello, wellcome to the Supplier test!";
 
         List<String> wellcomeList = Stream.generate(wellcome).limit(5).toList();
 

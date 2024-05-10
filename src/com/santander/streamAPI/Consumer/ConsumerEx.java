@@ -15,9 +15,7 @@ public class ConsumerEx {
 
         //integerList.forEach(impressEven);
 
-        integerList.forEach(n -> {
-            if (n%2==0) System.out.println(n);
-        });
+        integerList.forEach(n -> { if (n%2==0) System.out.println(n); });
     }
 }
 

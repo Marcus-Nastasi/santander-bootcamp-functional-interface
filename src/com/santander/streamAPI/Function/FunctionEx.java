@@ -13,8 +13,7 @@ public class FunctionEx {
 
         //List<Integer> duplicatedNumbers = integerList.stream().map(duplicate).toList();
 
-        List<Integer> duplicatedNumbers = integerList.stream()
-                .map(n -> n * 2).toList();
+        List<Integer> duplicatedNumbers = integerList.stream().map(n -> n * 2).toList();
 
         duplicatedNumbers.forEach(System.out::println);
     }
